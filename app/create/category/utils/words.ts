@@ -1,0 +1,108 @@
+import { WordCategory } from "@/types/categories";
+
+export const wordCategories: WordCategory[] = [
+  {
+    value: 'comidas',
+    name: 'Comidas',
+    emoji: '🍎',
+    words: [
+      'Pizza',
+      'Hambúrguer',
+      'Sushi',
+      'Chocolate',
+      'Lasanha',
+      'Brigadeiro',
+    ],
+  },
+  {
+    value: 'animais',
+    name: 'Animais',
+    emoji: '🐶',
+    words: [
+      'Cachorro',
+      'Gato',
+      'Leão',
+      'Elefante',
+      'Cavalo',
+      'Golfinho',
+    ],
+  },
+  {
+    value: 'lugares',
+    name: 'Lugares',
+    emoji: '🌍',
+    words: [
+      'Praia',
+      'Escola',
+      'Hospital',
+      'Aeroporto',
+      'Cinema',
+      'Restaurante',
+    ],
+  },
+  {
+    value: 'filmes_series',
+    name: 'Filmes & Séries',
+    emoji: '🎬',
+    words: [
+      'Batman',
+      'Harry Potter',
+      'Stranger Things',
+      'Vingadores',
+      'Matrix',
+      'Titanic',
+    ],
+  },
+  {
+    value: 'games',
+    name: 'Games',
+    emoji: '🎮',
+    words: [
+      'Minecraft',
+      'Fortnite',
+      'GTA',
+      'The Sims',
+      'Zelda',
+      'FIFA',
+    ],
+  },
+  {
+    value: 'profissoes',
+    name: 'Profissões',
+    emoji: '🧑‍💼',
+    words: [
+      'Médico',
+      'Professor',
+      'Programador',
+      'Advogado',
+      'Engenheiro',
+      'Policial',
+    ],
+  },
+  {
+    value: 'objetos',
+    name: 'Objetos',
+    emoji: '🧸',
+    words: [
+      'Celular',
+      'Computador',
+      'Relógio',
+      'Mochila',
+      'Óculos',
+      'Chave',
+    ],
+  },
+  {
+    value: 'transportes',
+    name: 'Transportes',
+    emoji: '🚗',
+    words: [
+      'Carro',
+      'Avião',
+      'Bicicleta',
+      'Ônibus',
+      'Trem',
+      'Moto',
+    ],
+  },
+];
