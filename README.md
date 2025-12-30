@@ -41,20 +41,6 @@ usando **Next.js**.
 
 ------------------------------------------------------------------------
 
-## 📁 Estrutura do projeto
-
-    app/
-     ├── page.tsx
-     ├── game/
-     │   └── page.tsx
-    components/
-     └── game/
-         └── WordCard.tsx
-    data/
-     └── wordCategories.ts
-
-------------------------------------------------------------------------
-
 ## 💾 Dados no LocalStorage
 
 ``` ts
