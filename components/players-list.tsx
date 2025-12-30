@@ -21,7 +21,6 @@ export default function PlayersList({
     const player: Player = {
       id: crypto.randomUUID(),
       name,
-      impostor: false,
     };
     handleAddNewPlayer(player);
     setName("");

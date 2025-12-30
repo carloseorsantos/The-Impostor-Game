@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🕵️‍♂️ The Impostor Game
 
-## Getting Started
+Impostor é um jogo social inspirado em jogos de dedução, onde um jogador
+é secretamente o **Impostor** e tenta se misturar enquanto os outros
+tentam descobri-lo.
 
-First, run the development server:
+O jogo foi desenvolvido para rodar no navegador, com foco em **mobile**,
+usando **Next.js**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+------------------------------------------------------------------------
+
+## 🎮 Como funciona
+
+-   Os jogadores são cadastrados localmente
+-   Uma categoria de palavras é escolhida
+-   Uma palavra é sorteada
+-   Um jogador aleatório é definido como **Impostor**
+-   Cada jogador vê seu papel **um por vez**
+-   A palavra só aparece ao **segurar o card**
+
+------------------------------------------------------------------------
+
+## 🧠 Regras principais
+
+-   Apenas **1 jogador é o Impostor**
+-   O Impostor **não vê a palavra**
+-   Os demais jogadores veem a **mesma palavra**
+-   A palavra só é revelada ao **pressionar e segurar**
+-   Nada é salvo de forma sensível no `localStorage`
+
+------------------------------------------------------------------------
+
+## 🛠️ Tecnologias
+
+-   **Next.js (App Router)**
+-   **React**
+-   **TypeScript**
+-   **Tailwind CSS**
+-   **LocalStorage** (estado local do jogo)
+
+------------------------------------------------------------------------
+
+## 📁 Estrutura do projeto
+
+    app/
+     ├── page.tsx
+     ├── game/
+     │   └── page.tsx
+    components/
+     └── game/
+         └── WordCard.tsx
+    data/
+     └── wordCategories.ts
+
+------------------------------------------------------------------------
+
+## 💾 Dados no LocalStorage
+
+``` ts
+localStorage.setItem('players', JSON.stringify([
+  { id: '1', name: 'Carlos' },
+  { id: '2', name: 'Ingrid' },
+]));
+
+localStorage.setItem('category', 'comidas');
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+⚠️ Nunca são salvos: - Palavra sorteada - Papel do jogador
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+------------------------------------------------------------------------
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ▶️ Como rodar o projeto
 
-## Learn More
+``` bash
+pnpm install
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Acesse: http://localhost:3000
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+------------------------------------------------------------------------
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Roadmap (Próximos passos)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-   [ ] Múltiplos impostores
+-   [ ] Timer por rodada
+-   [ ] Multiplayer online
+-   [ ] Sistema de salas
+-   [ ] Upgrades na interface
+-   [ ] Full Responsivo
