@@ -36,6 +36,7 @@ usando **Next.js**.
 -   **React**
 -   **TypeScript**
 -   **Tailwind CSS**
+-   **daisyUI**
 -   **LocalStorage** (estado local do jogo)
 
 ------------------------------------------------------------------------
